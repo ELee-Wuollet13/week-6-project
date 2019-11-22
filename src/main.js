@@ -9,16 +9,16 @@ import { DoctorAPIService } from './doctor-api-service.js'
 $(document).ready(function(){
   $('form#intake').submit(function(event){
     event.preventDefault();
-    let doctorName = $("#name").val();
-    let illnessName = $("#illnessName").val();
+    let doctorName = $(".name").val();
+    let illnessName = $(".illness").val();
     console.log(doctorName);
     console.log(illnessName);
 
 
     (async () => {
       let doctorApiService = new DoctorAPIService();
-      const response = await doctorApiService.getDoctorByCategory(category);
-      getElements(response);
+      const response = await doctorApiService.getDoctorByCategory();
+      // getElements(response);
       console.log(response);
     })();
 
