@@ -14,11 +14,11 @@ $(document).ready(function(){
 
 
     (async () => {
-  let doctorApiService = new DoctorAPIService();
-  const response = await doctorApiService.getDoctorByCategory(category);
-  getElements(response);
-  console.log(response);
-})();
+      let doctorApiService = new DoctorAPIService();
+      const response = await doctorApiService.getDoctorByCategory(category);
+      getElements(response);
+      console.log(response);
+    })();
 
   });
 });
