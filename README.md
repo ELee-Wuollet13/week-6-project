@@ -1,4 +1,4 @@
-## Dockor Finder
+## Doctor Finder
 Made by: Everett Lee-Wuollet
 
 #### Description
