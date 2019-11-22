@@ -6,8 +6,15 @@ import './styles.css';
 
 
 $(document).ready(function(){
-  $('form').submit(function(event){
+  $('form#intake').submit(function(event){
     event.preventDefault();
+
+    (async () => {
+  let doctorApiService = new DoctorAPIService();
+  const response = await doctorApiService.getDoctorByCategory(category);
+  getElements(response);
+  console.log(response);
+})();
 
   });
 });

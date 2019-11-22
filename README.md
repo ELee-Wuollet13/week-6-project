@@ -16,7 +16,7 @@ This program locates medical professionals in the Portland area.
 
 
 #### Setup Instructions
-Either follow this like: https://elee-wuollet13.github.io/Project5/ Or access the page through Github a link to my github repository and clone the program directly.
+Either follow this like: https://github.com/ELee-Wuollet13/week-6-project Or access the page through Github a link to my GitHub repository and clone the program directly.
 
 #### Known Bugs
 There are no known bugs at this time.
