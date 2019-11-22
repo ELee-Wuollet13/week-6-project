@@ -11,6 +11,8 @@ $(document).ready(function(){
     event.preventDefault();
     let doctorName = $("#name").val();
     let illnessName = $("#illnessName").val();
+    console.log(doctorName);
+    console.log(illnessName);
 
 
     (async () => {

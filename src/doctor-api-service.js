@@ -5,7 +5,7 @@ export class DoctorAPIService {
       let jsonifiedResponse = await response.json();
       return jsonifiedResponse;
     } catch(error) {
-      console.error(`There was an error handling your request: ${error.message}`);
+      console.error(`I'm sorry, there was a problem: ${error.message}`);
     }
   }
 }
