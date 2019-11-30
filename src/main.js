@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     (async () => {
       let doctorApiService = new DoctorAPIService();
-      const response = await doctorApiService.getDoctorByCategory();
+      const response = await doctorApiService.getDoctorByName();
       // getElements(response);
       console.log(response);
     })();
