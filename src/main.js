@@ -11,13 +11,21 @@ $(document).ready(function() {
     event.preventDefault();
     let doctorName = $(".name").val();
     let illnessName = $(".illness").val();
+    let practice = $(".practice").val();
 
     (async () => {
       let doctorApiService = new DoctorAPIService();
-      const response = await doctorApiService.getDoctorByName(doctorName);
+      const response = await doctorApiService.getDoctorByName(doctorName, illnessName, practice);
       getElements(response);
       console.log(response);
     })();
+
+    // (async () => {
+    //   let doctorApiService = new DoctorAPIService();
+    //   const response = await doctorApiService.getDoctorByName(doctorName);
+    //   getElements(response);
+    //   console.log(response);
+    // })();
 
     function getElements(response) {
     $('.output').show();
